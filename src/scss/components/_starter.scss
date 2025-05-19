@@ -1,0 +1,192 @@
+@import '../utils/mixins'; 
+@import '../utils/variables'; 
+
+#starter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+
+    @include tablet {
+        padding: 40px;
+    }
+
+    @include desktop {
+        padding-top: 45px;
+    }
+}
+
+.photo-dev {
+    width: 113px;
+    border-radius: 100%;
+    border: 2px solid $third-color;
+    padding: 8px;
+
+    @include tablet {
+    }
+
+    @include desktop {
+        width: 215px;
+    }
+}
+
+.about-me-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin : 60px 80px 25px 80px;
+    padding: 30px 30px 30px 31px;
+    background-color: $background-color;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+    width: 255px;
+    
+    @include tablet {
+        width: 380px;
+        margin: 0px;
+    }
+
+    @include desktop {
+        margin: 0px;
+        width: 605px;
+    }
+}
+
+.about-me {
+    &-name {
+        font-size: $font-size-medium;
+        font-weight: $semi-bold;
+        
+        background-image: linear-gradient(
+            -225deg,
+            #19d1d7 5%,
+            #6915c0 29%,
+            #1713ff 67%,
+            #00aeff 100%
+        );
+        
+        background-size: 200% auto;
+        color: $secondary-color;
+        background-clip: text;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+
+        @include tablet {
+            font-size: $font-size-xlarge;
+        }
+
+        @include desktop {
+            font-size: $font-size-xxlarge;
+        }
+    }
+        
+        @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+}
+
+    &-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: $semi-bold;
+
+        @include tablet {
+            font-size: 19px;
+        }
+
+        @include desktop {
+            font-size: 20px;
+        }
+    }
+
+    &-content {
+        font-size: $font-size-small;
+        width: 123px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: $regular;
+        padding-top: 7px;
+
+        @include tablet {
+            font-size: 14px;
+        }
+
+        @include desktop {
+            font-size: 15px;
+            width: 280px;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        @include tablet {
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        @include desktop {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+
+    &-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondary-color;
+        font-family: 'Poppins', sans-serif;
+        font-weight: $semi-bold;
+        font-size: 18px;
+        color : $primary-color;
+        font-size: 12px;
+        gap: 7px;
+        border: 1px solid $primary-color;
+        border-radius: 25px;
+        margin-top: 20px;
+        padding: 5px;
+        width: 68px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    
+        @include tablet {
+            font-size: 13px;
+            gap: 9px;
+            width: 75px;
+            padding: 8px 10px;
+        }
+
+        @include desktop {
+            gap: 20px;
+            font-size: 15px;
+            width: 100px;
+        }
+
+        &:hover { 
+            background-color: $third-color;
+            color: $secondary-color;
+            border: $secondary-color;
+            transition: all 0.3s ease;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+            .about-me-button-download_icon {
+                filter: brightness(0) invert(1);
+            }
+
+        }
+
+        &-download_icon{
+            width: 1.5em;  
+        }
+    }
+}

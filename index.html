@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/png" href="logo-favicon.webp"/>
+		<title> Nicolas Boursier - portfolio développeur front-end</title>
+
+		<!-- Balises meta  -->
+		<meta name="title" content="Axelle Maolé - portfolio développeuse front-end">
+		<meta name="description" content="Développeuse front-end & graphiste en région parisienne.">
+
+		<!-- Balises Open Graph pour Facebook et Instagram -->
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="Axelle Maolé - portfolio développeuse front-end">
+		<meta property="og:description" content="Développeuse front-end & graphiste en région parisienne.">
+		<meta property="og:image" content="https://axellemaole.com/assets/coding-B8x8p36r.webp">
+		<meta property="og:url" content="https://axellemaole.com">
+
+		<!-- Balises Twitter Card pour Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Axelle Maolé - portfolio développeuse front-end">
+		<meta name="twitter:description" content="Développeuse front-end & graphiste en région parisienne.">
+		<meta name="twitter:image" content="https://axellemaole.com/assets/coding-B8x8p36r.webp" >
+
+		<!--Rich Snippet-->
+		<meta itemprop="name" content="Axelle Maolé - portfolio développeuse front-end">
+		<meta itemprop="description" content="Développeuse front-end & graphiste en région parisienne.">
+		<meta itemprop="image" content="https://axellemaole.com/assets/coding-B8x8p36r.webp">
+		<meta itemprop="openingHours" content="Mo-Fr 09:00-18:00">
+
+		<!--Données structurées au format JSON-LD -  utiles pour les moteurs de recherche, les assistants virtuels et d'autres services -->
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Axelle Maolé - Développeuse front-end & graphiste",
+			"telephone": "06 49 31 49 74",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "",
+				"postalCode": "94500",
+				"addressLocality": "Champigny-sur-Marne"
+			},
+			"openingHours": "Mo-Fr 9:00-18:00",
+			"priceRange": ""
+		}
+		</script>
+	</head>
+	
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
+
+		<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+			<input type="text" name="name" autocomplete="name"/>
+			<input type="email" name="email" autocomplete="email" />
+			<input type="subject" name="subject" />
+			<textarea name="message"></textarea>
+		</form>
+	</body>
+</html>

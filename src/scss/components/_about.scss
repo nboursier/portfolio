@@ -1,0 +1,108 @@
+@import '../utils/mixins'; 
+@import '../utils/variables'; 
+
+.about {
+    margin: 0px 0 0px 0;
+    padding: 20px;
+
+    @include desktop {
+        margin: 20px 0 60px 0;
+    }
+
+    .about-title-text {
+        color: $primary-color;
+        transition: all 0.3s ease;
+        margin-left: 20px;
+        font-size: 25px;
+
+        @include desktop {
+            font-size: 35px;
+            margin: 10px;
+
+            &:hover {
+                font-size: 40px;
+                color: $third-color;
+            }
+        }
+    }
+
+    .about-list-container {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+        max-width: 970px;
+        margin: 0 auto; 
+
+        .hobbies-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0 85px;
+
+            @include desktop {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            
+            .hobbies-list-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start; /* Changez cette ligne */
+                align-items: center;
+                flex: 1 1 calc(50% - 100px);
+                list-style-type: none;
+                border-radius: 10px;
+                padding: 15px 0;
+                height: 415px;
+                min-width: 235px;
+                height: 415px;
+
+                background-color: $background-color;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                transition: all 0.4s ease;
+
+                @include desktop {
+                    height: 314px;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                h3 {
+                    font-size: 15px;
+                    margin: 10px;
+
+                    @include desktop {
+                        font-size: 20px;
+                        margin: 10px;
+                    }
+                }
+
+                .hobbies-list-item-picture {
+                    width: 70px;
+                    border-radius: 100%;
+                    margin: 15px;
+
+                    @include desktop {
+                        width: 100px;
+                    }
+                }
+
+                .hobbies-list-item-content {
+                    font-size: 12px;
+                    list-style: circle;
+                    text-align: left;
+                    margin : 0 15px 0 15px;
+                    max-width: 305px;
+
+                    @include desktop {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

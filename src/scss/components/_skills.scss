@@ -1,0 +1,119 @@
+@import '../utils/mixins'; 
+@import '../utils/variables'; 
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 25px 0 5px 0;
+
+    @include desktop {
+        padding: 40px 0 50px 0;
+    }
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-title-text {
+    color: $secondary-color;
+    font-size: 25px;
+    margin-left: 0px;
+    transition: all 0.3s ease;
+
+    @include desktop {
+        font-size: $font-size-large;
+        margin: 10px;
+        margin-left: 20px;
+
+        &:hover {
+            transition: all 0.3s ease;
+            font-size: 40px;
+        }
+    }
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    padding-top: 20px;
+}
+
+.skills-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-list-dev,
+.skills-list-design {
+    gap: 25px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+
+    @include desktop {
+        gap: 15px;
+    }
+}
+
+.skills-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    transition: all 0.3s ease;
+
+    @include tablet {
+        width: 4em;
+    }
+
+    @include desktop {
+        width: 6em;
+    }
+
+
+    &:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.1);
+    }
+
+    &-name {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+.skills-list-item-icon {
+    width: 20px;
+    border: solid $secondary-color 1px;
+    border-radius: 50%;
+    transition: all 0.8s ease;
+
+    @include tablet {
+        width: 30px;
+    }
+
+    @include desktop {
+        width: 40px;
+    }
+
+    &:hover {
+        transition: all 0.8s ease;
+        transform: scale(1.1) rotate(360deg);
+    }
+}
