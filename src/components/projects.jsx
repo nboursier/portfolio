@@ -24,14 +24,7 @@ function Projects() {
         <section id="projects">
             <h2 className="projects-title"> Projets </h2>
 
-            {/* <div className="filter">
-                <div className="filter-container">
-                    <button className={`filter-container-button ${filter === 'tous' ? 'active' : ''}`} onClick={() => setFilter('tous')}> {language === 'fr' ? 'Tous' : 'All'}</button>
-                    <button className={`filter-container-button ${filter === 'perso' ? 'active' : ''}`} onClick={() => setFilter('perso')}> {language === 'fr' ? 'Perso' : 'Personal'} </button>
-                    <button className={`filter-container-button ${filter === 'scolaire' ? 'active' : ''}`} onClick={() => setFilter('scolaire')}>{language === 'fr' ? 'Scolaire' : 'School'} </button>
-                    <button className={`filter-container-button ${filter === 'wip' ? 'active' : ''}`} onClick={() => setFilter('wip')}>{language === 'fr' ? 'En cours' : 'WIP'} </button>
-                </div>
-            </div> */}
+            
 
             <div className="projects-container">
                 {currentProjects.map((project) => (
