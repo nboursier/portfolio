@@ -52,7 +52,7 @@ function Projects() {
                             <a target="_blank" href={project.link}>
                                 <img src={websiteLogo} alt="Website" aria-label="Lien vers le site" className="projects-link-github" />
                             </a>
-                            <Link to={`/project/${project.id}`} className="view-details-link">Voir +</Link>
+                            <Link to={`/portfolio/project/${project.id}`} className="view-details-link">Voir +</Link>
                         </div>
                     </div>
                 ))}
