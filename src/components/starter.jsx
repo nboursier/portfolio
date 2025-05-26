@@ -2,8 +2,8 @@ import { useContext } from 'react';
 import PropTypes from 'prop-types';
 import photoDev from '../assets/photo_pro.jpg';
 
-import cvFile from '../assets/maole_axelle-cv_2025.pdf';
-import bookFile from '../assets/maole_axelle-book-compressed.pdf';
+import cvFile from '../assets/CV2025.pdf';
+
 import downloadIcon from '../assets/download_icon.webp';
 
 import StarterTranslations from '../translation/StarterTranslation';
@@ -23,14 +23,7 @@ function Starter() {
         document.body.removeChild(link);
     };
 
-    const handleDownloadBook = () => {
-        const link = document.createElement('a');
-        link.href = bookFile;
-        link.download = 'maolé_axelle-book.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+
 
     return (
         <section id="starter">
@@ -57,10 +50,7 @@ function Starter() {
                             {StarterTranslations[language].starter_cv_button}
                         </button>
 
-                        <button className="about-me-button" onClick={handleDownloadBook}>
-                            <img src={downloadIcon} alt={StarterTranslations[language].starter_download_alt || "Télécharger"} className="about-me-button-download_icon" />
-                            {StarterTranslations[language].starter_book_button || "BOOK"}
-                        </button>
+                        
                     </div>
                 </div>
             </div>
