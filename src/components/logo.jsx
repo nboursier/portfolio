@@ -6,7 +6,7 @@ import '../scss/style.scss';
 
 function Logo({ className }) {
     return (
-        <Link to="/" className={`main-nav-logo ${className}`}>
+        <Link to="/portfolio/" className={`main-nav-logo ${className}`}>
             <div className="main-nav-logo-titre">
                 <h1 >Nicolas Boursier</h1>
                 <h2 >Ingénieur Arts et Metiers</h2>
