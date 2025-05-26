@@ -12,7 +12,7 @@ function Error() {
             <div className='error'>
                 <h2 className='error_title'>404</h2>
                 <p className='error_text'> Oups ! La page que vous demandez n&rsquo;existe pas.</p>
-                <Link className='error_return' to="/"> Retourner sur la page d&rsquo;accueil</Link>
+                <Link className='error_return' to="/portfolio/"> Retourner sur la page d&rsquo;accueil</Link>
             </div>
             <Footer />
         </div>
