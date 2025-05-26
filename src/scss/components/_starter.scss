@@ -17,9 +17,9 @@
 }
 
 .photo-dev {
-    width: 113px;
-    border-radius: 100%;
-    border: 2px solid $third-color;
+    width: 130px;
+    border-radius: 50%;
+    border: 3px solid $third-color;
     padding: 8px;
 
     @include tablet {
@@ -41,8 +41,8 @@
     padding: 30px 30px 30px 31px;
     background-color: $background-color;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
-    width: 255px;
+    box-shadow: 0 0 20px rgba(8, 2, 61, 0.87);
+    width: 285px;
     
     @include tablet {
         width: 380px;

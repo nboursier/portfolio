@@ -1,5 +1,5 @@
-@import '../utils/mixins'; 
-@import '../utils/variables'; 
+@import '../utils/mixins';
+@import '../utils/variables';
 
 #contact {
     background-color: $background-color;
@@ -15,8 +15,8 @@
     padding: 45px 20px 20px 20px;
 
     @include tablet {
-    padding: 20px 20px 5px 20px
-}
+        padding: 20px 20px 5px 20px
+    }
 
     @include desktop {
         display: flex;
@@ -83,7 +83,7 @@ section.contact_form {
     &-number,
     &-mail {
         display: flex;
-        align-items : center;
+        align-items: center;
         cursor: pointer;
     }
 }
@@ -97,22 +97,35 @@ section.contact_form {
         width: 60px;
     }
 
-    &:hover{
+    &:hover {
         transition: all 0.8s ease;
         transform: scale(1.1) rotate(360deg)
     }
 }
 
 .contact-infos-text {
-    font-size: 15px;
+    font-size: 25px;
     text-decoration: none;
-    color: $primary-color;
+
+    background-image: linear-gradient(-225deg,
+            #19d1d7 5%,
+            #6915c0 29%,
+            #1713ff 67%,
+            #00aeff 100%);
+
+    background-size: 200% auto;
+    color: $secondary-color;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
 
     @include desktop {
-        font-size : 20px;
+        font-size: 20px;
     }
 
-    &:hover{
+    &:hover {
         transition: all 0.3s ease;
         color: $third-color;
         text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
@@ -126,12 +139,12 @@ section.contact_form {
     background-color: $secondary-color;
 }
 
-.contact_form-content-container-button{
+.contact_form-content-container-button {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $secondary-color;
-    border : none;
+    border: none;
     padding: 8px;
     font-size: 18px;
     border-radius: 12px;

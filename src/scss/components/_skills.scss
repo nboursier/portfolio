@@ -1,5 +1,5 @@
-@import '../utils/mixins'; 
-@import '../utils/variables'; 
+@import '../utils/mixins';
+@import '../utils/variables';
 
 #skills {
     display: flex;
@@ -22,8 +22,28 @@
 }
 
 .skills-title-text {
+
+
+
+    font-size: $font-size-medium;
+    font-weight: $semi-bold;
+
+    background-image: linear-gradient(-225deg,
+            #19d1d7 5%,
+            #6915c0 29%,
+            #1713ff 67%,
+            #00aeff 100%);
+
+    background-size: 200% auto;
     color: $secondary-color;
-    font-size: 25px;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+
+    color: $secondary-color;
+    font-size: 35px;
     margin-left: 0px;
     transition: all 0.3s ease;
 

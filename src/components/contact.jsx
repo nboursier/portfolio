@@ -57,11 +57,11 @@ function Contact() {
                     </div>
                     <div className="contact-infos-number">
                         <img src={phoneIcon} className="contact-infos-icon" alt={translations.phoneIconAlt || "icon phone"} />
-                        <a href="tel:+33649314974" aria-label="Lien vers le numéro de téléphone" className="contact-infos-text">+336 81 87 96 11</a>
+                        <a href="tel:+33649314974" aria-label="Lien vers le numéro de téléphone" className="contact-infos-text"><p className="contact-infos-text"> +336 81 87 96 11</p></a>
                     </div>
                     <div className="contact-infos-mail">
                         <img src={mailIcon} className="contact-infos-icon" alt={translations.mailIconAlt || "icon mail"} />
-                        <a href="mailto:nicolasboursier@yahoo.fr" aria-label="Lien vers l'adresse e-mail" className="contact-infos-text">nicolasboursier@yahoo.fr</a>
+                        <a href="mailto:nicolasboursier@yahoo.fr" aria-label="Lien vers l'adresse e-mail" className="contact-infos-text"><p className="contact-infos-text"> nicolasboursier@yahoo.fr</p></a>
                     </div>
                 </div>
 

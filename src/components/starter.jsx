@@ -35,7 +35,7 @@ function Starter() {
                         alt={StarterTranslations[language].starter_portrait_alt}
                         loading="eager"
                         className='photo-dev'
-                        width="215px" height="auto"
+                        width="255px" height="auto"
                     />
                 </div>
 

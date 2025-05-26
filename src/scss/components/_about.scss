@@ -3,7 +3,7 @@
 
 .about {
     margin: 0px 0 0px 0;
-    padding: 20px;
+    padding: 40px;
 
     @include desktop {
         margin: 20px 0 60px 0;
@@ -13,7 +13,7 @@
         color: $primary-color;
         transition: all 0.3s ease;
         margin-left: 20px;
-        font-size: 25px;
+        font-size: 35px;
 
         @include desktop {
             font-size: 35px;
@@ -36,7 +36,7 @@
         .hobbies-list {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 50px;
             padding: 0 85px;
 
             @include desktop {
@@ -59,8 +59,8 @@
                 height: 415px;
 
                 background-color: $background-color;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgba(49, 82, 78, 0.623);
                 transition: all 0.4s ease;
 
                 @include desktop {
