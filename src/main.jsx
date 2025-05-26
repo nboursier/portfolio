@@ -11,10 +11,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <LanguageContextProvider>
         <Router>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/error" element={<Error />} />
+                <Route path="/portfolio/" element={<Home />} />
+                <Route path="/portfolio/error" element={<Error />} />
                 <Route path="*" element={<Error />} />
-                <Route path="/project/:id" element={<ProjectDetails />} />
+                <Route path="/portfolio/project/:id" element={<ProjectDetails />} />
             </Routes>
         </Router>
     </LanguageContextProvider>    
