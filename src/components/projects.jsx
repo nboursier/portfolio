@@ -40,19 +40,10 @@ function Projects() {
                             ))}
                         </div>
                         <div className="projects-links">
-                            {/* 
-                              */}
-
-                            {/* <a href="" className="project-link-viewmore">
-                                {language === 'fr' ? 'Voir +' : 'See +'}
-                            </a> */}
-                            <a target="_blank" href={project.githublink}>
-                                <img src={githubLogo} alt="GitHub" aria-label="Lien Github" className="projects-link-github" />
-                            </a>
-                            <a target="_blank" href={project.link}>
-                                <img src={websiteLogo} alt="Website" aria-label="Lien vers le site" className="projects-link-github" />
-                            </a>
-                            <Link to={`/portfolio/project/${project.id}`} className="view-details-link">Voir +</Link>
+                           
+                            
+                            <Link to={`/portfolio/project/${project.id}`} className="project-link-viewmore">Voir +</Link>
+                            
                         </div>
                     </div>
                 ))}

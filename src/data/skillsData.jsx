@@ -6,10 +6,9 @@ import SASS from '../assets/skills/sass-icon.webp';
 import Redux from '../assets/skills/redux-icon.webp';
 import Github from '../assets/skills/github-icon.webp';
 import Photoshop from '../assets/skills/photoshop-icon.webp';
-import Illustrator from '../assets/skills/illustator-icon.webp';
-import Indesign from '../assets/skills/indesign-icon.webp';
-import XD from '../assets/skills/xd-icon.webp';
+import Inkscape from '../assets/skills/inkscape_icon.png';
 import Swagger from '../assets/skills/swagger-icon.webp';
+import Autocad from '../assets/skills/autodesk-icon.png';
  
 
 
@@ -25,8 +24,7 @@ import Swagger from '../assets/skills/swagger-icon.webp';
     ];
 export const designerSkills = [
         { icon: Photoshop, name: "Photoshop", alt: "Photoshop icon" },
-        { icon: Illustrator, name: "Illustrator", alt: "Illustrator icon" },
-        { icon: Indesign, name: "Indesign", alt: "Indesign icon" },
-        { icon: XD, name: "Adobe XD", alt: "Adobe XD icon" }
+        { icon: Inkscape, name: "Inkscape", alt: "Inkscape icon" },
+        { icon: Autocad, name: "Autocad", alt: "Autodesk icon" }
     ];
 

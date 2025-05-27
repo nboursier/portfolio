@@ -19,7 +19,7 @@ function Contact() {
             <h2 className="contact-title">{translations.title || "Contact"}</h2>
             <div className="form_infos-container">
 
-                <section className="contact_form">
+                {/* <section className="contact_form">
                     <div className="contact_form-content">
                         <form className="contact_form-content-container" data-netlify="true" method="POST">
 
@@ -48,7 +48,7 @@ function Contact() {
                             <input className="contact_form-content-container-button" type="submit" value={translations.sendButton || "Envoyer"} />
                         </form>
                     </div>
-                </section>
+                </section> */}
 
                 <div className="contact-infos">
                     <div className="contact-infos-name">
