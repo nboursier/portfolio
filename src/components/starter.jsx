@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import photoDev from '../assets/photo_pro.jpg';
 
 import cvFile from '../assets/CV2025.pdf';
-
+import cvFile2 from '../assets/CV2025annexe.pdf';
 import downloadIcon from '../assets/download_icon.webp';
 
 import StarterTranslations from '../translation/StarterTranslation';
@@ -23,7 +23,14 @@ function Starter() {
         document.body.removeChild(link);
     };
 
-
+const handleDownload2 = () => {
+        const link = document.createElement('a');
+        link.href = cvFile2;
+        link.download = 'nicolasboursier-cvannexe.pdf'; // nom du fichier à télécharger
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     return (
         <section id="starter">
@@ -49,7 +56,10 @@ function Starter() {
                             <img src={downloadIcon} alt={StarterTranslations[language].starter_download_alt || "Télécharger" } className="about-me-button-download_icon" />
                             {StarterTranslations[language].starter_cv_button}
                         </button>
-
+                        <button className="about-me-button" onClick={handleDownload2}>
+                            <img src={downloadIcon} alt={StarterTranslations[language].starter_download_alt || "Télécharger" } className="about-me-button-download_icon" />
+                            {StarterTranslations[language].starter_cv_button2}
+                        </button>
                         
                     </div>
                 </div>
