@@ -1,7 +1,7 @@
 const StarterTranslations = {
     fr: {
         starter_hello: "Bonjour, je suis",
-        starter_role: "Développeur Front-end - Intégratreur Web",
+        starter_role: "Développeur Front-end - Intégrateur Web",
         starter_cv_button: "CV",
         starter_cv_button2: "annexe",
         starter_book_button : "BOOK",

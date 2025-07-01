@@ -7,7 +7,7 @@ const AboutTranslations = {
         experienceTitle: "Expérience",
         experienceContent: [
             "Développeur Front-end", 
-            "Chef de projet batiment, Ingénieur structure",
+            "15 ans en tant que Chef de projet batiment et Ingénieur structure, j entame une reconversion professionnelle",
         ],
         diplomaTitle: "Diplômes",
         diplomaContent: [
@@ -25,7 +25,7 @@ const AboutTranslations = {
         experienceTitle: "Experience",
         experienceContent: [
             "Front-end Developer / Integrator", 
-            "Structural Ingeneer",
+            "Structural Ingeneer for 15 years, i've had a change profession",
         ],
         diplomaTitle: "Diplomas",
         diplomaContent: [

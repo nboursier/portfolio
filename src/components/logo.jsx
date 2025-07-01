@@ -9,7 +9,7 @@ function Logo({ className }) {
         <Link to="/portfolio/" className={`main-nav-logo ${className}`}>
             <div className="main-nav-logo-titre">
                 <h1 >Nicolas Boursier</h1>
-                <h2 >Ingénieur Arts et Metiers</h2>
+                <h2 >Intégrateur Web </h2>
             </div>
         </Link>
     );
